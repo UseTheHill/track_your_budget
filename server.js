@@ -1,0 +1,30 @@
+const express = require("express");
+const logger = require("morgan");
+const mongoose = require("mongoose");
+const compression = require("compression");
+
+const PORT = process.env.PORT || 3000;
+
+const app = express();
+
+app.use(logger("dev"));
+
+app.use(compression());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+app.use(express.static("public"));
+
+// Connects to MongoDB through Heroku (deployed app) or a budget database on the localhost
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
+  useNewUrlParser: true,
+  useFindAndModify: false,
+  useUnifiedTopology: true,
+});
+
+// API routes
+app.use(require("./Develop/routes/api"));
+
+app.listen(PORT, () => {
+  console.log(`Express/Node.js server running on: http://localhost:${PORT}`);
+});
