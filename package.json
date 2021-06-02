@@ -1,28 +1,28 @@
 {
-    "name": "budget_tracker",
-    "version": "1.0.0",
-    "description": "",
-    "main": "server.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "node server.js",
-      "lite-server": "lite-server"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-      "compression": "^1.7.4",
-      "express": "^4.17.1",
-      "lite-server": "^2.6.1",
-      "mongoose": "^5.12.10",
-      "morgan": "^1.10.0"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+git+https://github.com/UseTheHill/budget_tracker.git"
-    },
-    "bugs": {
-      "url": "https://github.com/UseTheHill/budget_tracker/issues"
-    },
-    "homepage": "https://github.com/UseTheHill/budget_tracker#readme"
-  }
+  "name": "track_your_budget",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "lite-server": "lite-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "lite-server": "^2.6.1",
+    "mongoose": "^5.12.10",
+    "morgan": "^1.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+git+https://github.com/UseTheHill/track_your_budget.git"
+  },
+  "bugs": {
+    "url": "https://github.com/UseTheHill/track_your_budget/issues"
+  },
+  "homepage": "https://github.com/UseTheHill/track_your_budget#readme"
+}
