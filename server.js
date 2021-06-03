@@ -15,14 +15,14 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-// Connects to MongoDB through Heroku (deployed app) or a budget database on the localhost
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true,
+  useCreateIndex: true,
 });
 
-// API routes
+// routes
 app.use(require("./routes/api.js"));
 
 app.listen(PORT, () => {
