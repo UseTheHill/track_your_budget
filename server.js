@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budgetdb", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/mighty-inlet-19941", {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true,
